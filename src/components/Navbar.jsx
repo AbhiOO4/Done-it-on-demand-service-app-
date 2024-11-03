@@ -1,15 +1,13 @@
 import React from 'react'
-import homefull from '../images/home-full.png'
-import post from '../images/post.png'
-import profile from '../images/profile.png'
+import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({posticon, homeicon, profileicon}) {
   return (
     <div className='bg-yellow-400 h-20 fixed bottom-0 w-full z-50'>
         <ul className='flex items-center justify-self-center'>
-            <li className='px-10 '><img src={homefull} alt="home" /></li>
-            <li className='px-10 pb-4'><img src={post} alt="post" /></li>
-            <li className='px-10 '><img src={profile} alt="profile" /></li>
+            <li className='px-10 '><Link to='/'><img src={homeicon} alt="home" /></Link></li>
+            <li className='px-10 pb-4'><Link to='/Post'><img src={posticon} alt="post" /></Link></li>
+            <li className='px-10 '><img src={profileicon} alt="profile" /></li>
         </ul>
     </div>
   )

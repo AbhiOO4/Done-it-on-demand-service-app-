@@ -9,6 +9,10 @@ import landscaping from './images/landscaping.png'
 import fan from './images/fan.png'
 import bath from './images/bath.png'
 import washing from './images/washing.png'
+import post from './images/post.png'
+import homefull from './images/home-full.png'
+import profile from './images/profile.png'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,7 +50,11 @@ function App() {
         title="Home Cleaning Service"
         price="Rs 2000"
       />
-    <Navbar/>
+      <Navbar 
+      posticon={post}
+      homeicon={homefull}
+      profileicon={profile}
+      />
     </>
   )
 }
