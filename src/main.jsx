@@ -9,6 +9,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Workers from './Workers.jsx'
+import Profile from './Profile.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/Workers",
     element: <Workers/>,
+  },
+  {
+    path: "/Profile",
+    element: <Profile/>,
   },
 ]);
 
